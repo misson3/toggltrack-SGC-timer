@@ -1,0 +1,12 @@
+# Nov26, 2021, ms
+
+# 0. get api token from web first
+
+# 1. to get wid
+curl -v -u <API_TOKEN>:api_token \
+-X GET https://api.track.toggl.com/api/v8/workspaces
+
+
+# 2. to get pid for the wid
+curl -v -u <API_TOKEN>:api_token \
+-X GET https://api.track.toggl.com/api/v8/workspaces/<WID>/projects
